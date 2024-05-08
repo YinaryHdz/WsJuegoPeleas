@@ -16,7 +16,7 @@ public abstract class Personaje {
 	public void setArma(Arma arma) {
 		this.arma = arma;
 	}
-	public double getVida() {
+	public int getVida() {
 		return vida;
 	}
 	public void setVida(int vida) {

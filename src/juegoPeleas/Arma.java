@@ -25,34 +25,4 @@ public TipoArma getTipoArma() {
 	}
 
 
-public  int danioArma(Personaje p){
-	 	int bonus = 0;
-		if(p instanceof Mago) {
-			Mago mago = (Mago)p;
-			if (tipoArma == TipoArma.HECHIZO) {
-				bonus = 10;
-				return (this.danio + bonus);
-			}else {
-				return this.danio;
-			}
-		}else if (p instanceof Guerrero) {
-			Guerrero guerrero = (Guerrero)p;
-			if (tipoArma == TipoArma.ARCO ||tipoArma == TipoArma.ESPADA ) {
-				bonus = 10;
-				return (this.danio + bonus);
-			}else {
-				return this.danio;
-			}
-		}else if (p instanceof Curandero) {
-			Curandero curandero = (Curandero)p;
-			if (tipoArma == TipoArma.REZOS ) {
-				bonus = 10;
-				return (this.danio + bonus);
-			}else {
-				return this.danio;
-			}
-		}
-		return (this.danio + bonus);
-
-	}
 }
